@@ -1,0 +1,1002 @@
+[
+  {
+    "id": 1020,
+    "name": "Grand Theft Auto V",
+    "rating_count": 3709
+  },
+  {
+    "id": 1942,
+    "name": "The Witcher 3: Wild Hunt",
+    "rating_count": 3292
+  },
+  {
+    "id": 72,
+    "name": "Portal 2",
+    "rating_count": 2809
+  },
+  {
+    "id": 472,
+    "name": "The Elder Scrolls V: Skyrim",
+    "rating_count": 2798
+  },
+  {
+    "id": 71,
+    "name": "Portal",
+    "rating_count": 2535
+  },
+  {
+    "id": 732,
+    "name": "Grand Theft Auto: San Andreas",
+    "rating_count": 2497
+  },
+  {
+    "id": 1009,
+    "name": "The Last of Us",
+    "rating_count": 2317
+  },
+  {
+    "id": 233,
+    "name": "Half-Life 2",
+    "rating_count": 2258
+  },
+  {
+    "id": 20,
+    "name": "BioShock",
+    "rating_count": 2170
+  },
+  {
+    "id": 127,
+    "name": "Assassin\u0027s Creed II",
+    "rating_count": 2115
+  },
+  {
+    "id": 538,
+    "name": "BioShock Infinite",
+    "rating_count": 2028
+  },
+  {
+    "id": 500,
+    "name": "Batman: Arkham Asylum",
+    "rating_count": 2004
+  },
+  {
+    "id": 733,
+    "name": "Grand Theft Auto: Vice City",
+    "rating_count": 1999
+  },
+  {
+    "id": 74,
+    "name": "Mass Effect 2",
+    "rating_count": 1979
+  },
+  {
+    "id": 231,
+    "name": "Half-Life",
+    "rating_count": 1934
+  },
+  {
+    "id": 73,
+    "name": "Mass Effect",
+    "rating_count": 1883
+  },
+  {
+    "id": 19560,
+    "name": "God of War",
+    "rating_count": 1800
+  },
+  {
+    "id": 1164,
+    "name": "Tomb Raider",
+    "rating_count": 1786
+  },
+  {
+    "id": 501,
+    "name": "Batman: Arkham City",
+    "rating_count": 1784
+  },
+  {
+    "id": 7346,
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "rating_count": 1723
+  },
+  {
+    "id": 7331,
+    "name": "Uncharted 4: A Thief\u0027s End",
+    "rating_count": 1670
+  },
+  {
+    "id": 529,
+    "name": "Far Cry 3",
+    "rating_count": 1617
+  },
+  {
+    "id": 434,
+    "name": "Red Dead Redemption",
+    "rating_count": 1612
+  },
+  {
+    "id": 565,
+    "name": "Uncharted 2: Among Thieves",
+    "rating_count": 1595
+  },
+  {
+    "id": 25076,
+    "name": "Red Dead Redemption 2",
+    "rating_count": 1566
+  },
+  {
+    "id": 75,
+    "name": "Mass Effect 3",
+    "rating_count": 1505
+  },
+  {
+    "id": 16,
+    "name": "Fallout: New Vegas",
+    "rating_count": 1486
+  },
+  {
+    "id": 11156,
+    "name": "Horizon Zero Dawn",
+    "rating_count": 1456
+  },
+  {
+    "id": 1029,
+    "name": "The Legend of Zelda: Ocarina of Time",
+    "rating_count": 1453
+  },
+  {
+    "id": 1011,
+    "name": "Borderlands 2",
+    "rating_count": 1420
+  },
+  {
+    "id": 121,
+    "name": "Minecraft",
+    "rating_count": 1400
+  },
+  {
+    "id": 7351,
+    "name": "DOOM",
+    "rating_count": 1372
+  },
+  {
+    "id": 18,
+    "name": "Max Payne",
+    "rating_count": 1370
+  },
+  {
+    "id": 7599,
+    "name": "Life is Strange",
+    "rating_count": 1365
+  },
+  {
+    "id": 623,
+    "name": "Call of Duty 4: Modern Warfare",
+    "rating_count": 1352
+  },
+  {
+    "id": 1871,
+    "name": "The Walking Dead: Season One",
+    "rating_count": 1341
+  },
+  {
+    "id": 128,
+    "name": "Assassin\u0027s Creed",
+    "rating_count": 1330
+  },
+  {
+    "id": 1074,
+    "name": "Super Mario 64",
+    "rating_count": 1315
+  },
+  {
+    "id": 15,
+    "name": "Fallout 3",
+    "rating_count": 1304
+  },
+  {
+    "id": 533,
+    "name": "Dishonored",
+    "rating_count": 1298
+  },
+  {
+    "id": 731,
+    "name": "Grand Theft Auto IV",
+    "rating_count": 1297
+  },
+  {
+    "id": 113,
+    "name": "Assassin\u0027s Creed Brotherhood",
+    "rating_count": 1295
+  },
+  {
+    "id": 1070,
+    "name": "Super Mario World",
+    "rating_count": 1289
+  },
+  {
+    "id": 76,
+    "name": "Dragon Age: Origins",
+    "rating_count": 1284
+  },
+  {
+    "id": 1970,
+    "name": "Assassin\u0027s Creed IV Black Flag",
+    "rating_count": 1265
+  },
+  {
+    "id": 59,
+    "name": "The Elder Scrolls IV: Oblivion",
+    "rating_count": 1221
+  },
+  {
+    "id": 12517,
+    "name": "Undertale",
+    "rating_count": 1204
+  },
+  {
+    "id": 974,
+    "name": "Resident Evil 4",
+    "rating_count": 1182
+  },
+  {
+    "id": 1026,
+    "name": "The Legend of Zelda: A Link to the Past",
+    "rating_count": 1180
+  },
+  {
+    "id": 375,
+    "name": "Metal Gear Solid",
+    "rating_count": 1172
+  },
+  {
+    "id": 512,
+    "name": "Uncharted 3: Drake\u0027s Deception",
+    "rating_count": 1170
+  },
+  {
+    "id": 9630,
+    "name": "Fallout 4",
+    "rating_count": 1169
+  },
+  {
+    "id": 730,
+    "name": "Grand Theft Auto III",
+    "rating_count": 1163
+  },
+  {
+    "id": 1068,
+    "name": "Super Mario Bros. 3",
+    "rating_count": 1154
+  },
+  {
+    "id": 7342,
+    "name": "INSIDE",
+    "rating_count": 1146
+  },
+  {
+    "id": 1331,
+    "name": "Limbo",
+    "rating_count": 1142
+  },
+  {
+    "id": 427,
+    "name": "Final Fantasy VII",
+    "rating_count": 1115
+  },
+  {
+    "id": 7334,
+    "name": "Bloodborne",
+    "rating_count": 1112
+  },
+  {
+    "id": 132,
+    "name": "Warcraft III: Reign of Chaos",
+    "rating_count": 1110
+  },
+  {
+    "id": 559,
+    "name": "Call of Duty: Modern Warfare 2",
+    "rating_count": 1093
+  },
+  {
+    "id": 247,
+    "name": "Half-Life 2: Episode Two",
+    "rating_count": 1092
+  },
+  {
+    "id": 26758,
+    "name": "Super Mario Odyssey",
+    "rating_count": 1087
+  },
+  {
+    "id": 478,
+    "name": "The Witcher 2: Assassins of Kings",
+    "rating_count": 1087
+  },
+  {
+    "id": 19565,
+    "name": "Marvel\u0027s Spider-Man",
+    "rating_count": 1080
+  },
+  {
+    "id": 6036,
+    "name": "The Last of Us Remastered",
+    "rating_count": 1080
+  },
+  {
+    "id": 1266,
+    "name": "Assassin\u0027s Creed III",
+    "rating_count": 1075
+  },
+  {
+    "id": 5503,
+    "name": "Batman: Arkham Knight",
+    "rating_count": 1047
+  },
+  {
+    "id": 11133,
+    "name": "Dark Souls III",
+    "rating_count": 1041
+  },
+  {
+    "id": 3025,
+    "name": "Middle-earth: Shadow of Mordor",
+    "rating_count": 1028
+  },
+  {
+    "id": 126,
+    "name": "Diablo II",
+    "rating_count": 1013
+  },
+  {
+    "id": 14593,
+    "name": "Hollow Knight",
+    "rating_count": 1009
+  },
+  {
+    "id": 116,
+    "name": "Star Wars: Knights of the Old Republic",
+    "rating_count": 1002
+  },
+  {
+    "id": 7344,
+    "name": "Ori and the Blind Forest",
+    "rating_count": 991
+  },
+  {
+    "id": 2155,
+    "name": "Dark Souls",
+    "rating_count": 989
+  },
+  {
+    "id": 358,
+    "name": "Super Mario Bros.",
+    "rating_count": 984
+  },
+  {
+    "id": 39,
+    "name": "Mafia",
+    "rating_count": 970
+  },
+  {
+    "id": 1372,
+    "name": "Counter-Strike: Global Offensive",
+    "rating_count": 952
+  },
+  {
+    "id": 1384,
+    "name": "Hotline Miami",
+    "rating_count": 941
+  },
+  {
+    "id": 431,
+    "name": "Uncharted: Drake\u0027s Fortune",
+    "rating_count": 933
+  },
+  {
+    "id": 2031,
+    "name": "Wolfenstein: The New Order",
+    "rating_count": 930
+  },
+  {
+    "id": 7323,
+    "name": "Rise of the Tomb Raider",
+    "rating_count": 927
+  },
+  {
+    "id": 1262,
+    "name": "South Park: The Stick of Truth",
+    "rating_count": 923
+  },
+  {
+    "id": 2993,
+    "name": "The Wolf Among Us",
+    "rating_count": 921
+  },
+  {
+    "id": 2207,
+    "name": "Shadow of the Colossus",
+    "rating_count": 921
+  },
+  {
+    "id": 17000,
+    "name": "Stardew Valley",
+    "rating_count": 916
+  },
+  {
+    "id": 1802,
+    "name": "Chrono Trigger",
+    "rating_count": 914
+  },
+  {
+    "id": 37,
+    "name": "Dead Space",
+    "rating_count": 911
+  },
+  {
+    "id": 11208,
+    "name": "NieR: Automata",
+    "rating_count": 909
+  },
+  {
+    "id": 545,
+    "name": "Call of Duty: Black Ops",
+    "rating_count": 904
+  },
+  {
+    "id": 537,
+    "name": "Assassin\u0027s Creed Revelations",
+    "rating_count": 898
+  },
+  {
+    "id": 8173,
+    "name": "Overwatch",
+    "rating_count": 897
+  },
+  {
+    "id": 379,
+    "name": "Metal Gear Solid 3: Snake Eater",
+    "rating_count": 897
+  },
+  {
+    "id": 866,
+    "name": "Sid Meier\u0027s Civilization V",
+    "rating_count": 896
+  },
+  {
+    "id": 8197,
+    "name": "Tetris",
+    "rating_count": 869
+  },
+  {
+    "id": 40,
+    "name": "Mafia II",
+    "rating_count": 865
+  },
+  {
+    "id": 1887,
+    "name": "Dragon Age: Inquisition",
+    "rating_count": 851
+  },
+  {
+    "id": 230,
+    "name": "StarCraft",
+    "rating_count": 848
+  },
+  {
+    "id": 1352,
+    "name": "Journey",
+    "rating_count": 836
+  },
+  {
+    "id": 327,
+    "name": "Age of Empires II: The Age of Kings",
+    "rating_count": 833
+  },
+  {
+    "id": 43,
+    "name": "Deus Ex: Human Revolution",
+    "rating_count": 830
+  },
+  {
+    "id": 673,
+    "name": "DOOM",
+    "rating_count": 818
+  },
+  {
+    "id": 1985,
+    "name": "Metal Gear Solid V: The Phantom Pain",
+    "rating_count": 814
+  },
+  {
+    "id": 979,
+    "name": "Call of Duty: Modern Warfare 3",
+    "rating_count": 814
+  },
+  {
+    "id": 960,
+    "name": "Max Payne 3",
+    "rating_count": 812
+  },
+  {
+    "id": 551,
+    "name": "God of War II",
+    "rating_count": 811
+  },
+  {
+    "id": 21,
+    "name": "BioShock 2",
+    "rating_count": 807
+  },
+  {
+    "id": 26226,
+    "name": "Celeste",
+    "rating_count": 801
+  },
+  {
+    "id": 549,
+    "name": "God of War",
+    "rating_count": 799
+  },
+  {
+    "id": 1077,
+    "name": "Super Mario Galaxy",
+    "rating_count": 798
+  },
+  {
+    "id": 109,
+    "name": "L.A. Noire",
+    "rating_count": 798
+  },
+  {
+    "id": 6801,
+    "name": "Far Cry 4",
+    "rating_count": 797
+  },
+  {
+    "id": 493,
+    "name": "Heavy Rain",
+    "rating_count": 793
+  },
+  {
+    "id": 11198,
+    "name": "Rocket League",
+    "rating_count": 791
+  },
+  {
+    "id": 1121,
+    "name": "Watch_Dogs",
+    "rating_count": 791
+  },
+  {
+    "id": 124,
+    "name": "Left 4 Dead 2",
+    "rating_count": 790
+  },
+  {
+    "id": 9730,
+    "name": "Firewatch",
+    "rating_count": 785
+  },
+  {
+    "id": 343,
+    "name": "Battlefield 3",
+    "rating_count": 782
+  },
+  {
+    "id": 622,
+    "name": "Call of Duty 2",
+    "rating_count": 778
+  },
+  {
+    "id": 3035,
+    "name": "The Stanley Parable",
+    "rating_count": 776
+  },
+  {
+    "id": 26192,
+    "name": "The Last of Us Part II",
+    "rating_count": 765
+  },
+  {
+    "id": 481,
+    "name": "Silent Hill 2",
+    "rating_count": 759
+  },
+  {
+    "id": 239,
+    "name": "StarCraft II: Wings of Liberty",
+    "rating_count": 754
+  },
+  {
+    "id": 498,
+    "name": "Borderlands",
+    "rating_count": 751
+  },
+  {
+    "id": 1051,
+    "name": "Mirror\u0027s Edge",
+    "rating_count": 744
+  },
+  {
+    "id": 1033,
+    "name": "The Legend of Zelda: The Wind Waker",
+    "rating_count": 741
+  },
+  {
+    "id": 38,
+    "name": "Dead Space 2",
+    "rating_count": 732
+  },
+  {
+    "id": 7603,
+    "name": "Hellblade: Senua\u0027s Sacrifice",
+    "rating_count": 729
+  },
+  {
+    "id": 19,
+    "name": "Max Payne 2: The Fall of Max Payne",
+    "rating_count": 721
+  },
+  {
+    "id": 120,
+    "name": "Diablo III",
+    "rating_count": 709
+  },
+  {
+    "id": 9927,
+    "name": "Persona 5",
+    "rating_count": 698
+  },
+  {
+    "id": 1103,
+    "name": "Super Metroid",
+    "rating_count": 695
+  },
+  {
+    "id": 98,
+    "name": "Need for Speed: Most Wanted",
+    "rating_count": 695
+  },
+  {
+    "id": 28540,
+    "name": "Assassin\u0027s Creed Origins",
+    "rating_count": 691
+  },
+  {
+    "id": 885,
+    "name": "Super Meat Boy",
+    "rating_count": 684
+  },
+  {
+    "id": 376,
+    "name": "Metal Gear Solid 2: Sons of Liberty",
+    "rating_count": 683
+  },
+  {
+    "id": 418,
+    "name": "Final Fantasy X",
+    "rating_count": 680
+  },
+  {
+    "id": 1377,
+    "name": "Spec Ops: The Line",
+    "rating_count": 678
+  },
+  {
+    "id": 1062,
+    "name": "Alan Wake",
+    "rating_count": 676
+  },
+  {
+    "id": 14362,
+    "name": "Detroit: Become Human",
+    "rating_count": 674
+  },
+  {
+    "id": 1627,
+    "name": "Super Smash Bros. Melee",
+    "rating_count": 673
+  },
+  {
+    "id": 338,
+    "name": "Half-Life 2: Episode One",
+    "rating_count": 673
+  },
+  {
+    "id": 41,
+    "name": "Deus Ex",
+    "rating_count": 662
+  },
+  {
+    "id": 5606,
+    "name": "Assassin\u0027s Creed Unity",
+    "rating_count": 653
+  },
+  {
+    "id": 56,
+    "name": "The Elder Scrolls III: Morrowind",
+    "rating_count": 652
+  },
+  {
+    "id": 625,
+    "name": "Call of Duty: World at War",
+    "rating_count": 650
+  },
+  {
+    "id": 19686,
+    "name": "Resident Evil 2",
+    "rating_count": 649
+  },
+  {
+    "id": 11233,
+    "name": "What Remains of Edith Finch",
+    "rating_count": 646
+  },
+  {
+    "id": 3097,
+    "name": "The Walking Dead: Season Two",
+    "rating_count": 644
+  },
+  {
+    "id": 740,
+    "name": "Halo: Combat Evolved",
+    "rating_count": 644
+  },
+  {
+    "id": 1979,
+    "name": "Battlefield 4",
+    "rating_count": 633
+  },
+  {
+    "id": 495,
+    "name": "Metro 2033",
+    "rating_count": 633
+  },
+  {
+    "id": 3042,
+    "name": "Dying Light",
+    "rating_count": 631
+  },
+  {
+    "id": 421,
+    "name": "Final Fantasy IX",
+    "rating_count": 628
+  },
+  {
+    "id": 19562,
+    "name": "Resident Evil 7: Biohazard",
+    "rating_count": 625
+  },
+  {
+    "id": 90101,
+    "name": "Super Smash Bros. Ultimate",
+    "rating_count": 622
+  },
+  {
+    "id": 113112,
+    "name": "Hades",
+    "rating_count": 617
+  },
+  {
+    "id": 1122,
+    "name": "Call of Duty: Black Ops II",
+    "rating_count": 610
+  },
+  {
+    "id": 76882,
+    "name": "Sekiro: Shadows Die Twice",
+    "rating_count": 608
+  },
+  {
+    "id": 118,
+    "name": "Star Wars: Knights of the Old Republic II - The Sith Lords",
+    "rating_count": 608
+  },
+  {
+    "id": 1334,
+    "name": "Brothers: A Tale of Two Sons",
+    "rating_count": 607
+  },
+  {
+    "id": 97,
+    "name": "Need for Speed: Underground 2",
+    "rating_count": 604
+  },
+  {
+    "id": 18320,
+    "name": "Battlefield 1",
+    "rating_count": 601
+  },
+  {
+    "id": 115,
+    "name": "League of Legends",
+    "rating_count": 601
+  },
+  {
+    "id": 1105,
+    "name": "Metroid Prime",
+    "rating_count": 600
+  },
+  {
+    "id": 1078,
+    "name": "Super Mario Galaxy 2",
+    "rating_count": 600
+  },
+  {
+    "id": 891,
+    "name": "Team Fortress 2",
+    "rating_count": 598
+  },
+  {
+    "id": 1983,
+    "name": "Bastion",
+    "rating_count": 594
+  },
+  {
+    "id": 96,
+    "name": "Need for Speed: Underground",
+    "rating_count": 592
+  },
+  {
+    "id": 80,
+    "name": "The Witcher",
+    "rating_count": 591
+  },
+  {
+    "id": 1030,
+    "name": "The Legend of Zelda: Majora\u0027s Mask",
+    "rating_count": 587
+  },
+  {
+    "id": 1879,
+    "name": "Terraria",
+    "rating_count": 586
+  },
+  {
+    "id": 621,
+    "name": "Call of Duty",
+    "rating_count": 586
+  },
+  {
+    "id": 14,
+    "name": "Fallout 2",
+    "rating_count": 585
+  },
+  {
+    "id": 987,
+    "name": "Halo 3",
+    "rating_count": 584
+  },
+  {
+    "id": 2368,
+    "name": "Dark Souls II",
+    "rating_count": 581
+  },
+  {
+    "id": 2003,
+    "name": "Batman: Arkham Origins",
+    "rating_count": 580
+  },
+  {
+    "id": 123,
+    "name": "World of Warcraft",
+    "rating_count": 576
+  },
+  {
+    "id": 499,
+    "name": "God of War III",
+    "rating_count": 574
+  },
+  {
+    "id": 103054,
+    "name": "Assassin\u0027s Creed Odyssey",
+    "rating_count": 572
+  },
+  {
+    "id": 426,
+    "name": "Final Fantasy VI",
+    "rating_count": 569
+  },
+  {
+    "id": 296,
+    "name": "Crysis",
+    "rating_count": 569
+  },
+  {
+    "id": 1036,
+    "name": "The Legend of Zelda: Twilight Princess",
+    "rating_count": 564
+  },
+  {
+    "id": 847,
+    "name": "Resident Evil 5",
+    "rating_count": 564
+  },
+  {
+    "id": 1905,
+    "name": "Fortnite",
+    "rating_count": 561
+  },
+  {
+    "id": 8263,
+    "name": "Assassin\u0027s Creed Syndicate",
+    "rating_count": 559
+  },
+  {
+    "id": 9061,
+    "name": "Cuphead",
+    "rating_count": 558
+  },
+  {
+    "id": 142,
+    "name": "Star Wars: Battlefront II",
+    "rating_count": 552
+  },
+  {
+    "id": 1022,
+    "name": "The Legend of Zelda",
+    "rating_count": 550
+  },
+  {
+    "id": 1221,
+    "name": "Kingdom Hearts II",
+    "rating_count": 549
+  },
+  {
+    "id": 836,
+    "name": "Prince of Persia: The Sands of Time",
+    "rating_count": 547
+  },
+  {
+    "id": 289,
+    "name": "Age of Empires",
+    "rating_count": 546
+  },
+  {
+    "id": 380,
+    "name": "Metal Gear Solid 4: Guns of the Patriots",
+    "rating_count": 536
+  },
+  {
+    "id": 539,
+    "name": "Metro: Last Light",
+    "rating_count": 535
+  },
+  {
+    "id": 122,
+    "name": "Left 4 Dead",
+    "rating_count": 530
+  },
+  {
+    "id": 74701,
+    "name": "Star Wars Jedi: Fallen Order",
+    "rating_count": 529
+  },
+  {
+    "id": 1342,
+    "name": "Beyond: Two Souls",
+    "rating_count": 529
+  },
+  {
+    "id": 78,
+    "name": "Dragon Age II",
+    "rating_count": 527
+  },
+  {
+    "id": 873,
+    "name": "Saints Row: The Third",
+    "rating_count": 526
+  },
+  {
+    "id": 1279,
+    "name": "Hearthstone",
+    "rating_count": 523
+  },
+  {
+    "id": 2350,
+    "name": "Mario Kart 8",
+    "rating_count": 519
+  }
+]

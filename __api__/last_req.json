@@ -1,0 +1,726 @@
+[
+  {
+    "id": 1020,
+    "alternative_names": [
+      {
+        "id": 30476,
+        "comment": "Chinese title",
+        "name": "俠盜獵車手 5"
+      },
+      {
+        "id": 89445,
+        "comment": "Acronym",
+        "name": "GTA V"
+      },
+      {
+        "id": 89447,
+        "comment": "Acronym",
+        "name": "GTA 5"
+      },
+      {
+        "id": 90133,
+        "comment": "Korean title - unofficial",
+        "name": "그랜드 테프트 오토 V "
+      },
+      {
+        "id": 101185,
+        "comment": "Japanese title - original",
+        "name": "グランド セフト オートV "
+      },
+      {
+        "id": 103297,
+        "comment": "Alternative spelling",
+        "name": "Grand Theft Auto 5"
+      },
+      {
+        "id": 119282,
+        "comment": "Acronym",
+        "name": "GTAV"
+      },
+      {
+        "id": 119283,
+        "comment": "Acronym",
+        "name": "GTA5"
+      }
+    ],
+    "franchises": [
+      {
+        "id": 493,
+        "name": "Grand theft Auto"
+      }
+    ],
+    "name": "Grand Theft Auto V",
+    "rating_count": 3712
+  },
+  {
+    "id": 1942,
+    "alternative_names": [
+      {
+        "id": 2427,
+        "comment": "Russian Title",
+        "name": "Ведьмак 3: Дикая охота"
+      },
+      {
+        "id": 2495,
+        "comment": "Polish title",
+        "name": "Wiedźmin 3: Dziki Gon"
+      },
+      {
+        "id": 4159,
+        "comment": "German title",
+        "name": "The Witcher 3: Wilde Jagd"
+      },
+      {
+        "id": 51940,
+        "comment": "Czech title",
+        "name": "Zaklínač 3: Divoký Hon"
+      },
+      {
+        "id": 51941,
+        "comment": "Alternative spelling",
+        "name": "The Witcher III: Wild Hunt"
+      },
+      {
+        "id": 71879,
+        "comment": "Chinese title - simplified",
+        "name": "巫师3：狂猎"
+      },
+      {
+        "id": 74560,
+        "comment": "Alternative title",
+        "name": "Witcher 3"
+      },
+      {
+        "id": 74561,
+        "comment": "Acronym",
+        "name": "TW3"
+      },
+      {
+        "id": 103139,
+        "comment": "Korean title",
+        "name": "더 위쳐 3: 와일드 헌트"
+      },
+      {
+        "id": 103784,
+        "comment": "Japanese title - original",
+        "name": "ウィッチャー３ ワイルドハント"
+      },
+      {
+        "id": 121895,
+        "comment": "Chinese title - traditional",
+        "name": "巫師3：狂獵"
+      }
+    ],
+    "franchises": [
+      {
+        "id": 452,
+        "name": "The Witcher"
+      }
+    ],
+    "name": "The Witcher 3: Wild Hunt",
+    "rating_count": 3297
+  },
+  {
+    "id": 72,
+    "alternative_names": [
+      {
+        "id": 50135,
+        "comment": "Korean title",
+        "name": "포털 2"
+      }
+    ],
+    "franchises": [
+      {
+        "id": 1724,
+        "name": "Portal"
+      }
+    ],
+    "name": "Portal 2",
+    "rating_count": 2809
+  },
+  {
+    "id": 472,
+    "alternative_names": [
+      {
+        "id": 82542,
+        "comment": "Acronym",
+        "name": "TES5"
+      },
+      {
+        "id": 82543,
+        "comment": "Alternative title",
+        "name": "The Elder Scrolls 5: Skyrim"
+      },
+      {
+        "id": 82544,
+        "comment": "Abbreviation",
+        "name": "Skyrim"
+      },
+      {
+        "id": 82545,
+        "comment": "Abbreviation",
+        "name": "TESV: Skyrim"
+      },
+      {
+        "id": 82546,
+        "comment": "Abbreviation",
+        "name": "TES Skyrim"
+      }
+    ],
+    "franchises": [
+      {
+        "id": 456,
+        "name": "The Elder Scrolls"
+      }
+    ],
+    "name": "The Elder Scrolls V: Skyrim",
+    "rating_count": 2799
+  },
+  {
+    "id": 71,
+    "alternative_names": [
+      {
+        "id": 41940,
+        "comment": "Other Alias",
+        "name": "the cake is a lie"
+      },
+      {
+        "id": 41941,
+        "comment": "Other Alias",
+        "name": "P0rtal"
+      },
+      {
+        "id": 50137,
+        "comment": "Korean title",
+        "name": "포털"
+      },
+      {
+        "id": 50138,
+        "comment": "Korean Alias",
+        "name": "포탈"
+      }
+    ],
+    "franchises": [
+      {
+        "id": 1724,
+        "name": "Portal"
+      }
+    ],
+    "name": "Portal",
+    "rating_count": 2537
+  },
+  {
+    "id": 732,
+    "alternative_names": [
+      {
+        "id": 2332,
+        "comment": "Acronym",
+        "name": "GTA: SA"
+      },
+      {
+        "id": 6795,
+        "comment": "Acronym",
+        "name": "GTA: San Andreas"
+      },
+      {
+        "id": 52703,
+        "comment": "Other Alias",
+        "name": "San Andreas"
+      },
+      {
+        "id": 52704,
+        "comment": "Acronym",
+        "name": "GTA San Andreas"
+      }
+    ],
+    "franchises": [
+      {
+        "id": 493,
+        "name": "Grand theft Auto"
+      }
+    ],
+    "name": "Grand Theft Auto: San Andreas",
+    "rating_count": 2498
+  },
+  {
+    "id": 1009,
+    "alternative_names": [
+      {
+        "id": 24559,
+        "comment": "Acronym",
+        "name": "TLoU"
+      },
+      {
+        "id": 37402,
+        "comment": "Russian title",
+        "name": "Одни из нас"
+      },
+      {
+        "id": 47728,
+        "comment": "Other Alias",
+        "name": "The Last of Us™ Remastered"
+      },
+      {
+        "id": 47729,
+        "comment": "Other Alias",
+        "name": "TLoU"
+      }
+    ],
+    "franchises": [
+      {
+        "id": 2675,
+        "name": "The Last of Us"
+      }
+    ],
+    "name": "The Last of Us",
+    "rating_count": 2319
+  },
+  {
+    "id": 233,
+    "alternative_names": [
+      {
+        "id": 37599,
+        "comment": "Acronym",
+        "name": "HL2"
+      },
+      {
+        "id": 37600,
+        "comment": "Alternative spelling",
+        "name": "Half Life 2"
+      },
+      {
+        "id": 37601,
+        "comment": "Acronym",
+        "name": "HL 2"
+      },
+      {
+        "id": 40860,
+        "comment": "Other Alias",
+        "name": "HL2"
+      }
+    ],
+    "franchises": [
+      {
+        "id": 425,
+        "name": "Half-Life"
+      }
+    ],
+    "name": "Half-Life 2",
+    "rating_count": 2258
+  },
+  {
+    "id": 20,
+    "alternative_names": [
+      {
+        "id": 52146,
+        "comment": "Acronym",
+        "name": "BS"
+      },
+      {
+        "id": 95676,
+        "comment": "Korean title",
+        "name": "바이오쇼크"
+      }
+    ],
+    "franchises": [
+      {
+        "id": 1686,
+        "name": "Bioshock"
+      }
+    ],
+    "name": "BioShock",
+    "rating_count": 2171
+  },
+  {
+    "id": 127,
+    "alternative_names": [
+      {
+        "id": 60600,
+        "comment": "Acronym",
+        "name": "ACII"
+      },
+      {
+        "id": 60601,
+        "comment": "Acronym",
+        "name": "AC2"
+      },
+      {
+        "id": 60603,
+        "comment": "Alternative spelling",
+        "name": "Assassin\u0027s Creed 2"
+      },
+      {
+        "id": 95172,
+        "comment": "Korean title",
+        "name": "어쌔신 크리드 2 "
+      }
+    ],
+    "franchises": [
+      {
+        "id": 571,
+        "name": "Assassin\u0027s Creed"
+      }
+    ],
+    "name": "Assassin\u0027s Creed II",
+    "rating_count": 2116
+  },
+  {
+    "id": 538,
+    "alternative_names": [
+      {
+        "id": 6204,
+        "comment": "Working title",
+        "name": "Project Icarus"
+      },
+      {
+        "id": 50225,
+        "comment": "Korean title",
+        "name": "바이오쇼크 인피니트"
+      },
+      {
+        "id": 68767,
+        "comment": "Alternative title",
+        "name": "BioShock: Infinity"
+      },
+      {
+        "id": 98991,
+        "comment": "Alternative title",
+        "name": "BioShock 3"
+      }
+    ],
+    "franchises": [
+      {
+        "id": 1686,
+        "name": "Bioshock"
+      }
+    ],
+    "name": "BioShock Infinite",
+    "rating_count": 2028
+  },
+  {
+    "id": 500,
+    "alternative_names": [
+      {
+        "id": 2705,
+        "comment": "Acronym",
+        "name": "Batman:AA"
+      },
+      {
+        "id": 39869,
+        "comment": "Abbreviation",
+        "name": "B:AA"
+      },
+      {
+        "id": 52605,
+        "comment": "Alternative title",
+        "name": "Arkham Asylum"
+      },
+      {
+        "id": 95454,
+        "comment": "Korean title",
+        "name": "배트맨: 아캄 어사일럼"
+      }
+    ],
+    "franchise": {
+      "id": 5,
+      "name": "Batman"
+    },
+    "franchises": [
+      {
+        "id": 5,
+        "name": "Batman"
+      }
+    ],
+    "name": "Batman: Arkham Asylum",
+    "rating_count": 2005
+  },
+  {
+    "id": 733,
+    "alternative_names": [
+      {
+        "id": 21962,
+        "comment": "Acronym",
+        "name": "GTA VC"
+      },
+      {
+        "id": 52701,
+        "comment": "Acronym",
+        "name": "GTA Vice City"
+      },
+      {
+        "id": 52702,
+        "comment": "Other Alias",
+        "name": "Vice City"
+      }
+    ],
+    "franchises": [
+      {
+        "id": 493,
+        "name": "Grand theft Auto"
+      }
+    ],
+    "name": "Grand Theft Auto: Vice City",
+    "rating_count": 1999
+  },
+  {
+    "id": 74,
+    "alternative_names": [
+      {
+        "id": 19924,
+        "comment": "Acronym",
+        "name": "ME2"
+      },
+      {
+        "id": 45203,
+        "comment": "Other Alias",
+        "name": "ME2"
+      },
+      {
+        "id": 50352,
+        "comment": "Korean title",
+        "name": "매스 이펙트 2"
+      }
+    ],
+    "name": "Mass Effect 2",
+    "rating_count": 1980
+  },
+  {
+    "id": 231,
+    "alternative_names": [
+      {
+        "id": 3857,
+        "comment": "Chinese title",
+        "name": "半条命"
+      },
+      {
+        "id": 3858,
+        "comment": "Working title",
+        "name": "Quiver"
+      },
+      {
+        "id": 28433,
+        "comment": "Acronym",
+        "name": "HL1"
+      },
+      {
+        "id": 28434,
+        "comment": "Acronym",
+        "name": "HL"
+      },
+      {
+        "id": 37595,
+        "comment": "Alternative spelling",
+        "name": "Half Life"
+      },
+      {
+        "id": 41184,
+        "comment": "Other Alias",
+        "name": "HL"
+      },
+      {
+        "id": 41185,
+        "comment": "Other Alias",
+        "name": "HL1"
+      }
+    ],
+    "franchises": [
+      {
+        "id": 425,
+        "name": "Half-Life"
+      }
+    ],
+    "name": "Half-Life",
+    "rating_count": 1934
+  },
+  {
+    "id": 73,
+    "alternative_names": [
+      {
+        "id": 12770,
+        "name": "Mass Effect 1"
+      },
+      {
+        "id": 15978,
+        "comment": "Other",
+        "name": "ME"
+      },
+      {
+        "id": 43974,
+        "comment": "Other Alias",
+        "name": "ME"
+      },
+      {
+        "id": 50351,
+        "comment": "Korean title",
+        "name": "매스 이펙트"
+      }
+    ],
+    "name": "Mass Effect",
+    "rating_count": 1884
+  },
+  {
+    "id": 19560,
+    "alternative_names": [
+      {
+        "id": 6680,
+        "comment": "Chronological order",
+        "name": "God of War 4"
+      },
+      {
+        "id": 6681,
+        "comment": "theoretical title",
+        "name": "God of War: New Omega"
+      },
+      {
+        "id": 30761,
+        "comment": "Portuguese title",
+        "name": "Deus da Guerra"
+      },
+      {
+        "id": 30762,
+        "comment": "German title",
+        "name": "Gott des Krieges"
+      },
+      {
+        "id": 30763,
+        "comment": "Japanese title",
+        "name": "ゴッド・オブ・ウォー"
+      },
+      {
+        "id": 37967,
+        "comment": "Alternative spelling",
+        "name": "God of War IV"
+      },
+      {
+        "id": 37968,
+        "comment": "Abbreviation",
+        "name": "GoW 4"
+      },
+      {
+        "id": 78548,
+        "comment": "Acronym",
+        "name": "GOW"
+      },
+      {
+        "id": 85870,
+        "comment": "Korean title - alternative",
+        "name": "갓 오브 워"
+      },
+      {
+        "id": 102175,
+        "comment": "Japanese title - original",
+        "name": "ゴッド・オブ・ウォー"
+      }
+    ],
+    "franchises": [
+      {
+        "id": 2098,
+        "name": "God of War"
+      }
+    ],
+    "name": "God of War",
+    "rating_count": 1802
+  },
+  {
+    "id": 1164,
+    "alternative_names": [
+      {
+        "id": 85754,
+        "comment": "Alternative title",
+        "name": "Tomb Raider featuring Lara Croft"
+      },
+      {
+        "id": 85755,
+        "comment": "Alternative title",
+        "name": "Tomb Raider 9"
+      }
+    ],
+    "franchise": {
+      "id": 279,
+      "name": "Tomb Raider"
+    },
+    "franchises": [
+      {
+        "id": 279,
+        "name": "Tomb Raider"
+      }
+    ],
+    "name": "Tomb Raider",
+    "rating_count": 1786
+  },
+  {
+    "id": 501,
+    "alternative_names": [
+      {
+        "id": 39937,
+        "comment": "Alternative title",
+        "name": "Batman: Arkham Asylum 2"
+      },
+      {
+        "id": 52606,
+        "comment": "Alternative title",
+        "name": "Arkham City"
+      },
+      {
+        "id": 119905,
+        "comment": "Acronym",
+        "name": "Batman: AC"
+      }
+    ],
+    "franchise": {
+      "id": 5,
+      "name": "Batman"
+    },
+    "franchises": [
+      {
+        "id": 5,
+        "name": "Batman"
+      }
+    ],
+    "name": "Batman: Arkham City",
+    "rating_count": 1784
+  },
+  {
+    "id": 7346,
+    "alternative_names": [
+      {
+        "id": 24387,
+        "comment": "Acronym",
+        "name": "TLoZ BotW"
+      },
+      {
+        "id": 50095,
+        "comment": "Korean title",
+        "name": "젤다의 전설 브레스 오브 더 와일드"
+      },
+      {
+        "id": 51797,
+        "comment": "Chinese title - traditional",
+        "name": "塞尔达传说 旷野之息"
+      },
+      {
+        "id": 51798,
+        "comment": "Acronym",
+        "name": "BotW"
+      },
+      {
+        "id": 71751,
+        "comment": "Japanese title - original",
+        "name": "ゼルダの伝説 ブレス オブ ザ ワイルド"
+      },
+      {
+        "id": 111231,
+        "comment": "Abbreviation",
+        "name": "Breath of the Wild"
+      }
+    ],
+    "franchises": [
+      {
+        "id": 596,
+        "name": "The Legend of Zelda"
+      }
+    ],
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "rating_count": 1724
+  }
+]
