@@ -1,0 +1,21 @@
+$phone: 767px;
+$tablet: 1200px;
+$laptop: 1600px;
+$fullHD: 1920px;
+$screen2k: 2400px;
+$projectWidth: 1920;
+$projectWidthTablet: 768;
+$projectWidthMobile: 375;
+
+:root {
+    --gray: #7c7c7c;
+    --white: #ffffff;
+    --black: #111111;
+    --orange: #fc6b02;
+    --primary: var(--orange);
+    --transition: 0.3s all ease-in-out;
+    --font-primary: 'Staatliches', monospace;
+    --font-secondary: Arial, sans-serif;
+    --font-tertiary: Arial, sans-serif;
+    --phone-w: #{$phone};
+}

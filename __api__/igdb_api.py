@@ -8,7 +8,10 @@ def test_req(token):
         # 'https://api.igdb.com/v4/characters',
         # 'fields name, rating_count; where rating_count > 1; sort rating_count desc; limit 200;',
         # 'fields name, rating_count, screenshots.url; where rating_count < 500; sort rating_count desc; limit 20;',
-        'fields name, rating_count, alternative_names.comment, alternative_names.name, franchise.name, franchises.name, version_title; where rating_count > 1 & category = 0; sort rating_count desc; limit 20;',
+        'fields name, rating_count, alternative_names.comment, screenshots.image_id, alternative_names.name, franchises.name, franchise.name, version_title; \
+            where rating_count > 1 & category = 0; \
+            sort rating_count desc; \
+            limit 20;',
         # 'fields *;',
         headers={
             'Authorization': f'Bearer {token}',
