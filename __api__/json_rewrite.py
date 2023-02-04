@@ -1,6 +1,6 @@
 import os, json
 
-def main_rewrite(ifn, ofn):
+def main_rewrite(ifn, ofn, *, ofnmin=None):
     if not os.path.isfile(ifn):
         print('Input file doesn\'t exist')
         input('...')
@@ -14,6 +14,7 @@ def main_rewrite(ifn, ofn):
             exit()
     
     new_games = []
+    new_games_min = []
     for game in json_data:
         if 'screenshots' not in game:
             continue
@@ -36,6 +37,12 @@ def main_rewrite(ifn, ofn):
             'franchises': franchises,
             'screenshots': screens
         }]
+        if ofnmin:
+            new_games_min += [{
+                'n': names,
+                'f': franchises,
+                's': screens
+            }]
 
     # print(new_games)
     
@@ -46,6 +53,15 @@ def main_rewrite(ifn, ofn):
             print('Invalid output data')
             input('...')
             exit()
+    
+    if ofnmin:
+        with open(ofnmin, 'w', encoding="utf-8") as f:
+            try:
+                f.write(json.dumps(new_games_min, ensure_ascii=False))
+            except:
+                print('Invalid output data (min)')
+                input('...')
+                exit()
 
-
-main_rewrite('./last_req.json', './api.json')
+if __name__ == "__main__":
+    main_rewrite('./last_req.json', './api.json')

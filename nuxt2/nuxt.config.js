@@ -28,7 +28,7 @@ export default {
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
             {
-                href: 'https://fonts.googleapis.com/css2?family=Staatliches&display=swap',
+                href: 'https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Staatliches&display=swap',
                 rel: 'stylesheet',
             },
         ],

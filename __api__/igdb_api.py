@@ -1,6 +1,61 @@
-import requests, os
+import requests, json
 
-def test_req(token):
+
+def generate_static_api_iter(token, cid, max_requests, max_games_per_req):
+    all_data = []
+    last_rating = 999999
+    for i in range(max_requests):
+        json_data = get_api_json(token, cid, max_games_per_req, None if i == 0 else last_rating)
+        last_rating = json_data[-1]['rating_count']
+        all_data += json_data
+        print(f'Request {i+1} finished')
+    
+    with open('./api_iter.json', 'w', encoding="utf-8") as f:
+        try:
+            f.write(json.dumps(all_data, ensure_ascii=False))
+        except:
+            print('API iter - Failed JSON dump to file')
+            input('...')
+            exit()
+
+
+def get_api_json(token, cid, max_games, max_rating_count=None):
+    try:
+        return json.loads(base_api_req(token, cid, max_games, max_rating_count))
+    except:
+        print('API to JSON - JSON parse failed, returning empty list')
+        return []
+
+
+def generate_static_api(token, cid, max_games):
+    content = base_api_req(token, cid, max_games)
+
+    with open('./last_req.json', 'wb') as f:
+        f.write(content)
+
+
+def base_api_req(token, cid, max_games, max_rating_count=None):
+    rating = f' & rating_count < {int(max_rating_count)}' if max_rating_count else ''
+    response = requests.post(
+        'https://api.igdb.com/v4/games',
+        f'fields name, rating_count, screenshots.image_id, alternative_names.name, franchises.name, franchise.name, version_title; \
+            where rating_count > 1 & category = 0{rating}; \
+            sort rating_count desc; \
+            limit {int(max_games)};', 
+        headers={
+            'Authorization': f'Bearer {token}',
+            'Client-ID': cid,
+        }
+    )
+    if response.status_code != 200:
+        print(f'API - Request error: {response.status_code}')
+        input('...')
+        exit()
+    
+    return response.content
+
+
+def test_req(token, cid):
     response = requests.post(
         'https://api.igdb.com/v4/games',
         # 'https://api.igdb.com/v4/artworks',
@@ -15,7 +70,7 @@ def test_req(token):
         # 'fields *;',
         headers={
             'Authorization': f'Bearer {token}',
-            'Client-ID': 'urmk40nw91thaiv607vkigckoxy7my',
+            'Client-ID': cid,
         }
     )
     if response.status_code != 200:

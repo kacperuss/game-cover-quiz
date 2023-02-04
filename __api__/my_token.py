@@ -9,7 +9,7 @@ def get_token():
             try:
                 json_data = json.loads(f.read())
                 if json_data['date'] > now():
-                    return json_data['access_token']
+                    return json_data['access_token'], json_data['client_id']
                 print('token.json expired')
             except:
                 print('Invalid token.json')
@@ -19,6 +19,7 @@ def get_token():
         input('...')
         exit()
 
+    cid = ''
     with open('./twitch_api_keys.json') as f:
         print('Requesting new token')
         try:
@@ -28,6 +29,7 @@ def get_token():
                 'client_secret': json_data['client_secret'],
                 'grant_type': 'client_credentials',
             })
+            cid = json_data['client_id']
         except:
             print('Invalid twitch_api_keys.json')
     if response.status_code != 200:
@@ -37,6 +39,7 @@ def get_token():
     
     response = response.json()
     response['date'] = now() + response['expires_in']
+    response['client_id'] = cid
     with open('./token.json', 'w') as f:
         f.write(json.dumps(response))
-    return response['access_token']
+    return response['access_token'], cid
