@@ -8,8 +8,8 @@ export default {
 
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        title: 'Page title',
-        description: 'Page description',
+        title: 'Game Cover',
+        description: 'Game Cover is a video game image quiz',
         htmlAttrs: {
             lang: 'en',
         },
@@ -22,7 +22,7 @@ export default {
             {
                 hid: 'description',
                 name: 'description',
-                content: 'Page description',
+                content: 'Game Cover is a video game image quiz',
             },
         ],
         link: [

@@ -3,7 +3,7 @@
         <div id="bg-img" class="absolute w-full h-full left-0 top-0">
             <img v-if="image" :src="image" class="block w-full h-full" />
         </div>
-        <div class="px-32 py-8 relative h-full w-full flex justify-center items-center flex-col gap-8">
+        <div class="px-32 py-8 relative h-full w-full flex justify-center items-center flex-col gap-4">
             <div id="main_img" class="w-full h-10 flex-1 relative">
                 <video
                     :src="require('~/assets/vid/loading2_indigo.mp4')"
@@ -94,6 +94,7 @@ export default {
     img {
         filter: drop-shadow(0 0 20px #000);
         object-fit: contain;
+        min-height: calc(100vh - 300rem / 16);
     }
     video {
         width: auto;

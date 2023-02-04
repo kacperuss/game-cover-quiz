@@ -96,7 +96,7 @@ export default {
             this.names = this.api_data[i][n_key]
             this.loading = false
             setTimeout(() => {
-                document.querySelector('#answer_form input').focus()
+                if (document.querySelector('#answer_form input')) document.querySelector('#answer_form input').focus()
             }, 200)
         },
         async init() {
