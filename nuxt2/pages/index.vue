@@ -92,7 +92,7 @@ export default {
 
             const j = parseInt(Math.random() * this.api_data[i][s_key].length)
             const ss = this.api_data[i][s_key][j]
-            this.image = `${BASE_URL}${ss}.png`
+            this.image = `${BASE_URL}${ss}.jpg`
             this.names = this.api_data[i][n_key]
             this.loading = false
             setTimeout(() => {
