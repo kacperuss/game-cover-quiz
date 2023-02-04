@@ -91,10 +91,10 @@ export default {
 
 <style lang="scss" scoped>
 #main_img {
+    min-height: calc(100vh - 300rem / 16);
     img {
         filter: drop-shadow(0 0 20px #000);
         object-fit: contain;
-        min-height: calc(100vh - 300rem / 16);
     }
     video {
         width: auto;
