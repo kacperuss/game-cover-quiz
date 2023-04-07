@@ -7,9 +7,11 @@
             class="flex-1"
             id="main_guess"
             :loading="loading"
+            :reporting="reporting"
             :image="loading ? null : image"
             :names="names"
         />
+        <ReportImg v-if="reporting" :image="rep_img" :game="rep_game" />
         <Footer />
     </main>
 </template>
@@ -33,6 +35,10 @@ export default {
             number: 200,
         },
         diff_chosen: false,
+        reporting: false,
+
+        rep_img: null,
+        rep_game: null,
     }),
     methods: {
         set_diff(new_diff) {
@@ -51,6 +57,13 @@ export default {
             let epic_random_number = Math.random()
             // return epic_random_number * epic_random_number
             return epic_random_number
+        },
+
+        show_report() {
+            this.reporting = true
+        },
+        hide_report() {
+            this.reporting = false
         },
 
         async fetch_api() {
@@ -95,6 +108,9 @@ export default {
             this.image = `${BASE_URL}${ss}.jpg`
             this.names = this.api_data[i][n_key]
             this.loading = false
+
+            this.rep_game = i
+            this.rep_img = ss
             setTimeout(() => {
                 if (document.querySelector('#answer_form input')) document.querySelector('#answer_form input').focus()
             }, 200)

@@ -16,18 +16,33 @@
             </div>
             <div id="answer_form" v-if="!answered">
                 <!-- <button class="_skip" @click="show_answer()">Show answer</button> -->
-                <button class="_skip" @click="show_answer()">Give up</button>
+                <button class="_skip" @click="show_answer()">
+                    Give up
+                    <div class="__smol">(ESC)</div>
+                </button>
                 <input v-if="loading" type="disabled" disabled="disabled" />
-                <input v-else type="text" @keypress="on_key_input" />
-                <button class="_enter" @click="check_answer()">Enter</button>
+                <input
+                    v-else
+                    type="text"
+                    @keypress="on_key_input"
+                    @input="on_input_change"
+                    :class="wrong ? '__wrong' : ''"
+                />
+                <button class="_enter" @click="check_answer()">
+                    Enter
+                    <div class="__smol">(Enter)</div>
+                </button>
             </div>
             <div id="answer_result" v-if="answered" class="">
                 <div class="w-25"></div>
                 <div class="_game_name" :class="correct ? 'correct' : 'skipped'">{{ names[0] }}</div>
-                <button class="_next" @click="load_next()">Next</button>
+                <button class="_next" @click="load_next()">
+                    Next
+                    <div class="__smol">(Enter)</div>
+                </button>
             </div>
-            <div class="">
-                <!-- <button class="_report w-70" @click="show_report()">Mark / report the screenshot</button> -->
+            <div class="" v-if="answered">
+                <button class="_report w-70" @click="show_report()">Mark / report the screenshot</button>
             </div>
         </div>
     </section>
@@ -44,39 +59,48 @@ export default {
         answered: false,
         correct: false,
         can_go_next: false,
+        wrong: false,
     }),
-    props: ['image', 'names', 'loading'],
+    props: ['image', 'names', 'loading', 'reporting'],
     methods: {
         show_answer(correct = false) {
-            if (this.loading) return
+            if (this.loading || this.reporting) return
             this.correct = correct
             this.answered = true
             setTimeout(() => {
                 this.can_go_next = true
             }, 50)
         },
+        on_input_change(e) {
+            this.wrong = false
+        },
         on_key_input(e) {
-            if (this.loading) return
+            if (this.loading || this.reporting) return
             if (e.key == 'Enter') {
                 e.preventDefault()
                 this.check_answer()
             }
         },
         load_next() {
-            if (this.loading) return
+            if (this.loading || this.reporting) return
             this.answered = false
             this.correct = false
             this.can_go_next = false
+            this.wrong = false
             this.$parent.loading = true
             setTimeout(() => {
                 this.$parent.set_random_game()
             }, 50)
         },
         normalise_name(name) {
-            return name.toLowerCase().replaceAll(/[^a-z]/g, '')
+            return name
+                .split(':')[0]
+                .toLowerCase()
+                .replaceAll(/[^a-z]/g, '')
+                .replaceAll('the', '')
         },
         check_answer() {
-            if (this.loading) return
+            if (this.loading || this.reporting) return
             // console.log('check')
             const input = $('#answer_form input')
             if (!input || !input.value) return
@@ -91,30 +115,34 @@ export default {
                 let err = Math.min(levenshtein(x, guess) / x.length, levenshtein(xx, norm_guess) / xx.length)
                 if (err < 0.26) return this.show_answer(true)
             }
+
+            this.wrong = true
         },
         show_report() {
-            console.log('report')
+            if (this.loading || this.reporting) return
+            this.$parent.show_report()
         },
 
         on_keypress_body(e) {
             const input = $('#answer_form input')
-            if (!input && this.answered && this.can_go_next) return this.load_next()
+            if (input && !this.answered && e.key == 'Escape') return this.show_answer()
+            if (!input && this.answered && this.can_go_next && e.key == 'Enter') return this.load_next()
             if (!input) return
             if (e.target == input) return
             input.focus()
             if (e.key.length == 1) {
-                input.value = input.value + e.key
+                // input.value = input.value + e.key
             }
         },
     },
     beforeMount() {
-        document.removeEventListener('keypress', this.on_keypress_body)
+        document.removeEventListener('keydown', this.on_keypress_body)
     },
     beforeDestroy() {
-        document.removeEventListener('keypress', this.on_keypress_body)
+        document.removeEventListener('keydown', this.on_keypress_body)
     },
     mounted() {
-        document.addEventListener('keypress', this.on_keypress_body)
+        document.addEventListener('keydown', this.on_keypress_body)
     },
 }
 </script>
@@ -154,6 +182,10 @@ button {
     &:active {
         opacity: 0.3;
     }
+    .__smol {
+        font-size: 0.8em;
+        opacity: 0.5;
+    }
 }
 #answer_form {
     display: flex;
@@ -168,6 +200,19 @@ button {
         font-size: calc(20rem / 16);
         width: calc(400rem / 16);
         text-align: center;
+        outline: none;
+        border: 1px solid transparent;
+        &.__wrong {
+            border-color: #912b23;
+            background: #2b2120;
+        }
+        &:not(.__wrong) {
+            &:active,
+            &:focus,
+            &:focus-visible {
+                border-color: #4089b9;
+            }
+        }
     }
     button._skip {
         background: rgb(129, 112, 37);
