@@ -1,12 +1,12 @@
 <template>
-    <section class="flex flex-col gap-4 justify-center items-center">
+    <section class="p-4 flex flex-col gap-4 justify-center items-center">
         <img
             :src="require('~/assets/img/SplashMGS5.png')"
             class="w-300 h-40 max-h-[12vh] object-contain"
             alt="Game Cover"
         />
-        <div class="pt-16 text-10">Choose your difficulty</div>
-        <div class="pt-4 flex gap-8">
+        <div class="pt-8 md:pt-16 text-10">Choose your difficulty</div>
+        <div class="pt-4 flex gap-4 md:gap-8">
             <button
                 :class="i == current ? '_active' : ''"
                 v-for="(d, i) in diffs"
@@ -16,12 +16,12 @@
                 {{ d.name }}
             </button>
         </div>
-        <div class="__cur_diff pt-4 w-120">
+        <div class="__cur_diff pt-4 w-full md:w-120">
             <div class="flex justify-between text-6 h-[1em]">
                 <div class="">{{ current == -1 ? '' : diffs[current]['name'] }}</div>
                 <div v-if="current != -1" class="">{{ diffs[current]['number'] }} Games</div>
             </div>
-            <div class="__desc h-48 --font-secondary pt-6 text-center">
+            <div class="__desc h-52 md:h-48 --font-secondary pt-6 text-center">
                 <div v-if="current != -1" v-html="diffs[current]['desc']"></div>
             </div>
             <div class="pt-8">
@@ -55,8 +55,8 @@ export default {
                 name: 'Advanced',
                 number: 1500,
                 desc: `Much wider list with some obscure titles.<br/><br/>
-                    The difficulty gets higher. This list, while still containing all games from 'Casual',
-                    requires mush richer video game knowledge. A mix of big franchises, less popular
+                    The difficulty gets higher. This list, while still containing all the games from 'Casual',
+                    requires much richer video game knowledge. A mix of big franchises, less popular
                     titles and hidden gems.<br/><br/>
                     Intended for average video game enjoyers.`,
             },

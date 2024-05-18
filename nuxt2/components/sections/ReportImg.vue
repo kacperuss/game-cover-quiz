@@ -1,12 +1,16 @@
 <template>
     <section class="">
         <div class="" v-if="!answered">
-            <div class="text-12 uppercase pb-6">Mark / report the screenshot</div>
-            <div class="text-8 pb-12">Please choose an option that describes the issue the most:</div>
+            <div class="text-6 md:text-12 text-center uppercase pb-6">Mark / report the screenshot</div>
+            <div class="text-3 md:text-8 pb-12 text-center">
+                Please choose an option that describes the issue the most:
+            </div>
             <div class="options flex flex-col gap-3 leading-14">
                 <button class="" v-for="(r, i) in reasons" :key="i" @click="send_report(i)">
                     {{ r }}
                 </button>
+                <div class="pt-2"></div>
+                <button @click="close">Go back</button>
             </div>
         </div>
         <div class="" v-if="answered">

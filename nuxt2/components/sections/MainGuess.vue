@@ -3,8 +3,14 @@
         <div id="bg-img" class="absolute w-full h-full left-0 top-0">
             <img v-if="image" :src="image" class="block w-full h-full" />
         </div>
-        <div class="px-32 py-8 relative h-full w-full flex justify-center items-center flex-col gap-4">
-            <div id="main_img" class="w-full h-10 flex-1 relative">
+        <div class="p-4 md:px-32 md:py-8 relative h-full w-full flex justify-center items-center flex-col gap-4">
+            <div
+                id="main_img"
+                class="w-full h-10 flex-1 relative"
+                @click="on_mobile_resize"
+                @mousemove="on_mobile_resize_move"
+                @touchmove="on_mobile_resize_move"
+            >
                 <video
                     :src="require('~/assets/vid/loading2_indigo.mp4')"
                     class="block w-full h-full absolute left-0 top-0"
@@ -12,8 +18,15 @@
                     autoplay
                     muted
                 ></video>
-                <img v-if="image" :src="image" class="block w-full h-full absolute top-0 left-0" />
+                <img
+                    v-if="image"
+                    :src="image"
+                    class="block w-full h-full absolute top-0 left-0"
+                    :class="is_mobile_resize ? '_mobile_resize' : ''"
+                    :style="`--offset: ${mobile_resize_offset}px`"
+                />
             </div>
+            <div v-if="debug_msg" class="__debug">{{ debug_msg }}</div>
             <div id="answer_form" v-if="!answered">
                 <!-- <button class="_skip" @click="show_answer()">Show answer</button> -->
                 <button class="_skip" @click="show_answer()">
@@ -35,7 +48,15 @@
             </div>
             <div id="answer_result" v-if="answered" class="">
                 <div class="w-25"></div>
-                <div class="_game_name" :class="correct ? 'correct' : 'skipped'">{{ names[0] }}</div>
+                <div class="_game_name" :class="correct ? 'correct' : 'skipped'">
+                    <div
+                        class="__mobile_scroller"
+                        :class="is_mobile_scroll ? '_anim' : ''"
+                        :style="`--anim_off: ${mobile_scroll_offset}px`"
+                    >
+                        {{ names[0] }}
+                    </div>
+                </div>
                 <button class="_next" @click="load_next()">
                     Next
                     <div class="__smol">(Enter)</div>
@@ -60,14 +81,34 @@ export default {
         correct: false,
         can_go_next: false,
         wrong: false,
+
+        is_mobile_resize: false,
+        mobile_resize_offset: 0,
+        is_mobile_scroll: false,
+        mobile_scroll_offset: 0,
+
+        debug_msg: null,
     }),
     props: ['image', 'names', 'loading', 'reporting'],
     methods: {
+        calc_mobile_scroll() {
+            const holder = this.$el.querySelector('#answer_result ._game_name')
+            const inner = this.$el.querySelector('#answer_result ._game_name .__mobile_scroller')
+            console.log(holder.clientWidth)
+            console.log(inner.clientWidth)
+            if (inner.clientWidth < holder.clientWidth) {
+                this.is_mobile_scroll = false
+                return
+            }
+            this.is_mobile_scroll = true
+            this.mobile_scroll_offset = (inner.clientWidth - holder.clientWidth) / 2
+        },
         show_answer(correct = false) {
             if (this.loading || this.reporting) return
             this.correct = correct
             this.answered = true
             setTimeout(() => {
+                this.calc_mobile_scroll()
                 this.can_go_next = true
             }, 50)
         },
@@ -88,6 +129,7 @@ export default {
             this.can_go_next = false
             this.wrong = false
             this.$parent.loading = true
+            this.is_mobile_resize = false
             setTimeout(() => {
                 this.$parent.set_random_game()
             }, 50)
@@ -134,6 +176,27 @@ export default {
                 // input.value = input.value + e.key
             }
         },
+
+        on_mobile_resize(e) {
+            e.preventDefault()
+            if (this.is_mobile_resize) {
+                this.is_mobile_resize = false
+                return
+            }
+            this.is_mobile_resize = true
+            let x = e.clientX / window.innerWidth
+            x -= 0.5
+            x *= window.innerWidth * 2
+            this.mobile_resize_offset = -x
+        },
+        on_mobile_resize_move(e) {
+            if (!this.is_mobile_resize) return
+            let x = e.touches ? e.touches[0].clientX : e.clientX
+            x = x / window.innerWidth
+            x -= 0.5
+            x *= window.innerWidth * 2
+            this.mobile_resize_offset = -x
+        },
     },
     beforeMount() {
         document.removeEventListener('keydown', this.on_keypress_body)
@@ -149,10 +212,21 @@ export default {
 
 <style lang="scss" scoped>
 #main_img {
-    min-height: calc(100vh - 300rem / 16);
+    min-height: calc(100vh - 300rem / 16 - 120px);
     img {
         filter: drop-shadow(0 0 20px #000);
         object-fit: contain;
+
+        @media (max-width: $phone) {
+            pointer-events: none;
+            &._mobile_resize {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) translateX(var(--offset, 0));
+                width: 250vw;
+                max-width: unset;
+            }
+        }
     }
     video {
         width: auto;
@@ -160,6 +234,7 @@ export default {
         transform: translateX(-50%);
         aspect-ratio: 1;
         object-fit: cover;
+        pointer-events: none;
     }
 }
 #bg-img {
@@ -191,6 +266,13 @@ button {
     display: flex;
     gap: calc(20rem / 16);
     align-items: center;
+
+    @media (max-width: $phone) {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-auto-flow: row dense;
+    }
     input {
         display: block;
         background: #fff2;
@@ -213,6 +295,11 @@ button {
                 border-color: #4089b9;
             }
         }
+        @media (max-width: $phone) {
+            width: 100%;
+            grid-column: 1/-1;
+            order: -1;
+        }
     }
     button._skip {
         background: rgb(129, 112, 37);
@@ -225,18 +312,55 @@ button {
     display: flex;
     gap: calc(20rem / 16);
     align-items: center;
+    @media (max-width: $phone) {
+        display: grid;
+        width: 100%;
+    }
     ._game_name {
         font-size: calc(32rem / 16);
         line-height: 1;
+        min-height: 1em;
+        position: relative;
         &.correct {
             color: rgb(98, 173, 79);
         }
         &.skipped {
             color: rgb(216, 190, 77);
         }
+        @media (max-width: $phone) {
+            .__mobile_scroller {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: max-content;
+                transform: translateX(-50%);
+                &._anim {
+                    animation: mobile_scroll_anim 5s linear 0s infinite;
+                }
+            }
+        }
     }
     ._next {
         background: rgb(46, 117, 28);
+    }
+}
+
+@keyframes mobile_scroll_anim {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateX(var(--anim_off, 0));
+    }
+    10% {
+        opacity: 1;
+        transform: translateX(-50%) translateX(var(--anim_off, 0));
+    }
+    90% {
+        opacity: 1;
+        transform: translateX(-50%) translateX(calc(-1 * var(--anim_off, 0)));
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateX(calc(-1 * var(--anim_off, 0)));
     }
 }
 </style>

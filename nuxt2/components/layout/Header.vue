@@ -1,8 +1,9 @@
 <template>
-    <section class="text-6 py-4 px-32 flex justify-between items-center bg-black text-white gap-4">
+    <section class="text-4 md:text-6 p-5 md:py-4 md:px-32 flex justify-between items-center bg-black text-white gap-4">
         <div class="underline cursor-pointer _a" @click="on_change_diff">Change difficulty</div>
-        <div class="">
-            <div v-if="diff" class="">Current difficulty: {{ diff['name'] }} ({{ diff['number'] }})</div>
+        <div class="flex flex-col items-end md:gap-4 md:flex-row">
+            <div v-if="diff" class="">Current difficulty:</div>
+            <div v-if="diff" class="">{{ diff['name'] }} ({{ diff['number'] }})</div>
         </div>
     </section>
 </template>
